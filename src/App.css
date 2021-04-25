@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #34a0a4;
+  background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, #f663c8 0%, #f663c8 12.5%, #df62c4 12.5%, #df62c4 25%, #c761c0 25%, #c761c0 37.5%, #b060bc 37.5%, #b060bc 50%, #985fb8 50%, #985fb8 62.5%, #815eb4 62.5%, #815eb4 75%, #695db0 75%, #695db0 87.5%, #525cac 87.5%, #525cac 100%);
 }
 
 .App {
@@ -54,7 +54,7 @@ body {
   height: 45px;
   outline: none;
   padding-left: 1em;
-  border: solid #52b69a;
+  border: solid #9295d1;
   background: transparent;
   color: #fff;
   border-radius: 6px 0 0 6px;
@@ -83,19 +83,163 @@ body {
   outline: none;
   border: none;
   border-radius: 0 6px 6px 0;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(#52b69a), to(#168aad));
-  background: linear-gradient(0.25turn, #52b69a, #168aad);
+  color: #003049;
+  background: -webkit-gradient(linear, left top, right top, from(#9295d1), to(#5a92cf));
+  background: linear-gradient(0.25turn, #9295d1, #5a92cf);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.pagrindas .todo-form .todo-button:hover {
+  color: #e5e5e5;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#9295d1), to(#5a70cf));
+  background: linear-gradient(0.25turn, #9295d1, #5a70cf);
 }
 
 .pagrindas .todo-row {
-  background: red;
-  padding: .5em 1em;
+  background: -webkit-gradient(linear, left top, right top, from(#9295d1), to(#618dd1));
+  background: linear-gradient(0.25turn, #9295d1, #618dd1);
   border-radius: 6px;
   margin-bottom: 10px;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 0px 10px;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
 }
 
-.pagrindas .todo-row .eilute .icons {
-  float: right;
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(4em);
+            transform: translateY(4em);
+    opacity: 0.0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(4em);
+            transform: translateY(4em);
+    opacity: 0.0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pagrindas .todo-row.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.pagrindas .todo-row .stulpelis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  padding: .7em 1em;
+}
+
+.pagrindas .todo-row .icons {
+  font-size: 1.7em;
+  margin-right: .6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagrindas .todo-row .icons .edit-icon {
+  margin-left: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.pagrindas .todo-row .icons .edit-icon:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pagrindas .todo-row .icons .delete-icon {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.pagrindas .todo-row .icons .delete-icon:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pagrindas .todo-row .todo-data {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #e8eddf;
+}
+
+.pagrindas .todo-row:nth-child(4n + 1) {
+  background: -webkit-gradient(linear, left top, right top, from(#5a92cf), to(#488dcc));
+  background: linear-gradient(0.25turn, #5a92cf, #488dcc);
+}
+
+.pagrindas .todo-row:nth-child(4n + 2) {
+  background: -webkit-gradient(linear, left top, right top, from(#3dafaf), to(#2dacc8));
+  background: linear-gradient(0.25turn, #3dafaf, #2dacc8);
+}
+
+.pagrindas .todo-row:nth-child(4n + 3) {
+  background: -webkit-gradient(linear, left top, right top, from(#bba6d5), to(#dfaed0));
+  background: linear-gradient(0.25turn, #bba6d5, #dfaed0);
+}
+
+.pagrindas .todo-row:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */
