@@ -242,4 +242,12 @@ body {
           transform: scale(1.05);
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .pagrindas {
+    top: 5%;
+    padding: 1.5em 1em;
+    margin: 0 1em;
+  }
+}
 /*# sourceMappingURL=app.css.map */

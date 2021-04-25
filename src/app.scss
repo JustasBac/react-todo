@@ -143,12 +143,19 @@ body {
         }
         &:nth-child(4n + 3) {
             //1 ir 5
-            // background: linear-gradient(0.25turn, #faa307, #f48c06);
             background: linear-gradient(0.25turn, rgb(187, 166, 213), rgb(223, 174, 208));
         }
         &:hover {
             transform: scale(1.05);
             cursor: pointer;
         }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pagrindas {
+        top: 5%;
+        padding: 1.5em 1em;
+        margin: 0 1em;
     }
 }
