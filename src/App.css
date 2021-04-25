@@ -1,1 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
 
+body {
+  background-color: #34a0a4;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagrindas {
+  color: #fff;
+  background: #184e77;
+  position: absolute;
+  top: 20%;
+  padding: 1.5em 2.5em;
+  border-radius: 1em;
+}
+
+.pagrindas h1 {
+  margin-bottom: 1em;
+}
+
+.pagrindas .todo-form {
+  margin-bottom: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.pagrindas .todo-form .todo-input {
+  min-width: 200px;
+  width: 80%;
+  height: 45px;
+  outline: none;
+  padding-left: 1em;
+  border: solid #52b69a;
+  background: transparent;
+  color: #fff;
+  border-radius: 6px 0 0 6px;
+}
+
+.pagrindas .todo-form .todo-input::-webkit-input-placeholder {
+  color: #e2e2e2;
+}
+
+.pagrindas .todo-form .todo-input:-ms-input-placeholder {
+  color: #e2e2e2;
+}
+
+.pagrindas .todo-form .todo-input::-ms-input-placeholder {
+  color: #e2e2e2;
+}
+
+.pagrindas .todo-form .todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.pagrindas .todo-form .todo-button {
+  width: 85px;
+  white-space: nowrap;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#52b69a), to(#168aad));
+  background: linear-gradient(0.25turn, #52b69a, #168aad);
+}
+
+.pagrindas .todo-row {
+  background: red;
+  padding: .5em 1em;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.pagrindas .todo-row .eilute .icons {
+  float: right;
+}
+/*# sourceMappingURL=app.css.map */

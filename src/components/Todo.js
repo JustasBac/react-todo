@@ -24,13 +24,19 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     return todos.map((todo, index) => (
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
 
-            <div key={todo.id} onClick={() => completeTodo(todo.id)}>
-                {todo.text}
+            <div className="eilute">
+                <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+                    {todo.text}
+                    <div className="icons">
+                        <AiFillDelete onClick={() => removeTodo(todo.id)} className="delete-icon" />
+                        <FaRegEdit onClick={() => setEdit({ id: todo.id, value: todo.text })} className="edit-icon" />
+                    </div>
+                </div>
             </div>
-            <div className="icons">
-                <AiFillDelete onClick={() => removeTodo(todo.id)} className="delete-icon" />
-                <FaRegEdit onClick={() => setEdit({ id: todo.id, value: todo.text })} className="edit-icon" />
+            <div>
+                {todo.date}
             </div>
+
         </div>
     ))
 }

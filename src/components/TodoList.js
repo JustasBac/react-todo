@@ -38,9 +38,9 @@ function TodoList() {
     };
 
     return (
-        <div>
-            <h1>Whats the plan bro</h1>
-            <TodoForm submitinam={addTodo} />
+        <div className="pagrindas">
+            <h1>What are your plans for today?</h1>
+            <TodoForm onSubmit={addTodo} />
             <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
         </div>
     )
