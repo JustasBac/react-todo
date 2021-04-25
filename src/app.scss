@@ -14,7 +14,6 @@ body {
     position: relative;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -27,6 +26,7 @@ body {
     border-radius: 1em;
     h1 {
         margin-bottom: 1em;
+        text-align: center;
     }
     .todo-form {
         margin-bottom: 1.5em;
@@ -42,9 +42,11 @@ body {
             background: transparent;
             color: #fff;
             border-radius: 6px 0 0 6px;
+            font-size: 1.2em;
         }
         .todo-input::placeholder {
             color: #e2e2e2;
+            font-size: 1.1em;
         }
         .todo-button {
             width: 85px;

@@ -16,9 +16,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -35,6 +32,7 @@ body {
 
 .pagrindas h1 {
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .pagrindas .todo-form {
@@ -58,22 +56,27 @@ body {
   background: transparent;
   color: #fff;
   border-radius: 6px 0 0 6px;
+  font-size: 1.2em;
 }
 
 .pagrindas .todo-form .todo-input::-webkit-input-placeholder {
   color: #e2e2e2;
+  font-size: 1.1em;
 }
 
 .pagrindas .todo-form .todo-input:-ms-input-placeholder {
   color: #e2e2e2;
+  font-size: 1.1em;
 }
 
 .pagrindas .todo-form .todo-input::-ms-input-placeholder {
   color: #e2e2e2;
+  font-size: 1.1em;
 }
 
 .pagrindas .todo-form .todo-input::placeholder {
   color: #e2e2e2;
+  font-size: 1.1em;
 }
 
 .pagrindas .todo-form .todo-button {
