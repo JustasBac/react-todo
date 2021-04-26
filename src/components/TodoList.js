@@ -9,7 +9,9 @@ function TodoList() {
         if (!todo.text || /^\s*$/.test(todo.text)) {
             return;
         }
-        const newTodos = [todo, ...todos];
+        console.log("todo...:", todo)
+        const newTodos = [...todos, todo];
+        console.log("newTodos...:", newTodos)
         setTodos(newTodos);
     };
 
